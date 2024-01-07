@@ -1,20 +1,15 @@
 #!/bin/bash
 
-# 削除対象外のファイルやディレクトリ
-exclude_files=("genkey.rb" "delete.sh" "regi.rb")
+# delete.sh
 
-# カレントディレクトリ内のすべてのファイルを取得
-files=(*)
+if [ "$#" -ne 1 ]; then
+  echo "Usage: $0 <directory>"
+  exit 1
+fi
 
-# 削除対象外のファイルを除外して削除
-for file in "${files[@]}"; do
-  if [[ ! " ${exclude_files[@]} " =~ " ${file} " ]]; then
-    # ファイルまたはディレクトリが存在する場合は削除
-    if [ -e "$file" ]; then
-      rm -r "$file"
-      echo "削除: $file"
-    fi
-  fi
-done
+directory="$1"
 
-echo "削除が完了しました。"
+# ディレクトリ内のすべてのファイルを削除
+rm -rf "$directory"/*
+
+echo "古い鍵は削除しました。."
