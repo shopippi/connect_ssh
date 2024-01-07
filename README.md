@@ -32,6 +32,27 @@ SSH (Secure Shell) is a key protocol for secure communication over a network. Ho
     Resist the Spirit of Time:
     Using the specification of the directory to be created, past keys are ruthlessly eliminated, ensuring a security victory.
 
+### Program Overview
+
+The generate_ssh_key method provides the primary functionality for generating SSH keys. It takes as arguments the path to a directory, the filename of the key, and the number of bits in the key.
+
+    1. First, if the specified directory does not exist, FileUtils.mkdir_p is used to create it.
+
+    2. Generate a new RSA key with OpenSSL::PKey::RSA.new and store it as a private key.
+
+    3. The generated public key is stored in the form of a public key. The contents of the generated public key are also displayed.
+
+    4. Finally, a note about the use of the key is displayed.
+
+    5. The user is prompted to enter a directory, a file name for the key, and the number of bits in the key. If the user does not enter any information, the default values are used.
+
+    6. The generate_ssh_key method is called to generate an SSH key in the specified directory.
+
+    7. The script asks the user for the directory name, the key file name, and the number of bits in the key, while passing those values as arguments to the generate_ssh_key method.
+
+    8. It also passes the values to the system(". /delete.sh #{directory}") to call the delete.sh script in the specified directory. This operation deletes some files in the directory.
+
+
 ### Conclusion:
 
 SSH Maestro" is the one and only spellbinding tool to transform public key management into a sacred ritual and build a fortress of security. Even beginners will not hesitate to enter the SSH realm with aplomb.
