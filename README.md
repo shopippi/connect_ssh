@@ -28,3 +28,13 @@ SSH (Secure Shell) is a key protocol for secure communication over a network. Ho
 ### Conclusion:
 
 SSH Maestro" is the one and only spellbinding tool to transform public key management into a sacred ritual and build a fortress of security. Even beginners will not hesitate to enter the SSH realm with aplomb.
+
+
+NOTES.
+
+You must have shell script execution privileges to run this program.
+
+``$ sudo chmod +x . /delete.sh``
+You must do $ sudo chmod +x . No, you must cast a spell.
+
+If you are a beginner-level wizard, please perform this operation as you are told.
