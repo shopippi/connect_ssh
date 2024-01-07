@@ -1,5 +1,12 @@
 # SSH Maestro: Supreme Master of the Public Key
 
+## Background:
+
+One of the problems before using this program is that it is very time consuming for beginners in networking and people who have never used a Linux-based OS to make an SSH connection.
+Since it is very wasteful to take time for SSH connection, we created a program that can be a wizard for beginners.
+
+Since the program is intended for use by beginners, it also specifies how to manage old keys, so it can meet minimum security requirements.
+
 ## Introduction:
 SSH (Secure Shell) is a key protocol for secure communication over a network. However, its strong security means that proper public key management is a must. This is where "SSH Maestro" comes in: the ultimate tool for beginners in SSH connectivity to facilitate public key output and management.
 
