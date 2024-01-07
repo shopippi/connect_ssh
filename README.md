@@ -38,3 +38,6 @@ You must have shell script execution privileges to run this program.
 You must do $ sudo chmod +x . No, you must cast a spell.
 
 If you are a beginner-level wizard, please perform this operation as you are told.
+
+![how to use](howto.png)
+
